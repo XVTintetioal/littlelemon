@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from restaurant_app.views import helloworld
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('hl', helloworld,name='helloworld'),
 ]
